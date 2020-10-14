@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  border: 0;
+  font-size: medium;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  background-color: whitesmoke;
+  justify-content: center;
+}
+
+#flex {
+  display: flex;
+  overflow: hidden;
+  min-width: 0;
+  flex-direction: row;
+}
