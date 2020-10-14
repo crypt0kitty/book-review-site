@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Eloquent Ruby book reviews</title>
+    <title>Clean Ruby book reviews</title>
+    <script src="index.js"></script>
     <link type="text/css" href="style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
@@ -11,30 +12,53 @@
   </head>
 
   <body>
-    <section class="book overview">
-      <header><h1>Book Reviews: Eloquent Ruby</h1></header>
-      <h2>Book Overview</h2>
-      <p>
-        <img
-          src="../images/cover-eloquent_ruby.jpg"
-          alt="book cover of Eloquent Ruby"
-          width="350"
-          height="430"
-        /><br /><br />
-        <strong>Author:</strong> Russ Olsen <br />
-        <strong>E-mail:</strong> russ@russolsen.com <br />
-        <strong>Twitter:</strong> @russolsen <br />
-        <strong>Website:</strong> http://eloquentruby.com/ <br />
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle"></span>
+      <a href="ruby_PNG48.png" class="logo">
+        <img src="ruby_PNG48.png" width="50" height="40" />
+      </a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="eloquent-ruby.html" class="nav-links">Reviews</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="book_overview">
+      <header class="header_title">
+        <h1>Book Reviews: Clean Ruby</h1>
+      </header>
+      <h2 class="books_reviewed">Book Overview</h2>
+      <img
+        class="reviewed_pics"
+        src="../images/cover-clean_ruby.jpg"
+        alt="book cover of Clean Ruby"
+        width="350"
+        height="430"
+      />
+      <p class="book_details">
+        <strong>Author:</strong> Jim Gay <br />
+        <strong>E-mail:</strong> jims@jim-gay.com <br />
+        <strong>Twitter:</strong> @jimmy121 <br />
+        <strong>Website:</strong> http://www.clean-ruby.com/ <br />
         <strong>Format:</strong> Paperback, 413 pages <br />
         <strong>Publication Date:</strong> February 21st 2011 <br />
         <strong>Publisher:</strong> Addison-Wesley Professional <br />
-        <strong>Price:</strong> $38.63 <br />
+        <strong>Price:</strong> $18.63 <br />
         <strong>ISBN:</strong> 860-1300202396 <br />
       </p>
     </section>
-    <article class="book description">
+    <hr />
+    <article class="book_description">
       <h2>Book Description</h2>
-      <hr />
       <p>
         "It's easy to write correct Ruby code, but to gain the fluency needed to
         write great Ruby code, you must go beyond syntax and absorb the Ruby way
@@ -74,8 +98,8 @@
       </p>
     </article>
     <hr />
-    <section class="reader reviews">
-      <article class="reader reviews">
+    <section class="reader_reviews">
+      <article class="reader_reviews">
         <h2>Reader Reviews</h2>
         <h3><em>"The first Ruby book I read in full within 24 hours"</em></h3>
         <p>
@@ -85,6 +109,7 @@
           </em>
         </p>
         <p>
+          <br /><br />
           This book is so easy to read yet so useful and informative that I read
           it in its entirety within 24 hours (across 2 distinct days admittedly
           ;-)).
@@ -134,6 +159,7 @@
           out your code - Russ's approaches reinforce the current "standard" way
           to write Ruby and this alone is worth the price of admission.
         </p>
+        <br /><br />
 
         <h3><em>"Eloquent Olsen"</em></h3>
         <p>
@@ -143,6 +169,7 @@
           </em>
         </p>
         <p>
+          <br /><br />
           For better or worse the vast majority of my work life journey has been
           travelled with Java as my vehicle of expression. However, by nature I
           have a burning desire to learn new languages and at one point or
@@ -205,9 +232,9 @@
           more about Ruby, then you would be hard-pressed to find a better book
           than "Eloquent Ruby" in helping you to do so.
         </p>
-        <hr />
       </article>
     </section>
+    <hr />
   </body>
   <footer></footer>
 </html>
