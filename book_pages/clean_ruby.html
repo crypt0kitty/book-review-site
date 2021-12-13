@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
     <title>Clean Ruby book reviews</title>
-    <script src="../index.js"></script>
     <link type="text/css" href="../style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <nav class="navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle"></span>
-      <ul class="main-nav" id="js-menu">
-        <li>
-          <a href="../index.html" class="nav-links">Home</a>
-        </li>
-        <li>
-          <a href=# class="nav-links">Reviews</a>
-          <ul class="dropdown-content">
-            <li><a class = "drop-items" href="../book_pages/clean_ruby.html">Clean Ruby</a></li>
-            <li><a class = "drop-items" href="../book_pages/confident_ruby.html">Confident Ruby</a></li>
-            <li><a class = "drop-items" href="../book_pages/eloquent-ruby.html">Eloquent Ruby</a></li>
-            <li><a class = "drop-items" href="../book_pages/ruby_science.html">Ruby Science</a></li>
-            <li><a class = "drop-items" href="../book_pages/grounded_rubyist.html">Well Grounded Rubyist</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="nav-links">About Us</a>
-        </li>
-        <li>
-          <a href="#" class="nav-links">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <a href="../index.html" class="nav-links">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn">Reviews <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="clean_ruby.html">Clean Ruby</a>
+          <a href="confident_ruby.html">Confident Ruby</a>
+          <a href="eloquent-ruby.html">Eloquent Ruby</a>
+          <a href="ruby_science.html">Ruby Science</a>
+          <a href="grounded_rubyist.html">Well Grounded Rubyist</a>
+        </div>
+      </div>
+      <a href="#contact">About</a>
+      <a href="#contact">Contact</a>
+    </div>
     <section class="book_overview">
       <header class="header_title">
         <h1>Book Reviews: Clean Ruby</h1>
@@ -140,7 +128,7 @@
       </article>
     </section>
     <footer>
-      <p class="footer-text">Copyright &copy; 2020 Sandy Vasquez. All rights reserved.</p>
+      <p class="footer-text">Copyright &copy; Sandy Vasquez</p>
   </footer>
 </body>
 </html>

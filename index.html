@@ -2,11 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <!-- <meta name="author" content="John Doe"> -->
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
     <title>Ruby Digest: Ruby book reviews</title>
-    <script src="index.js"></script>
     <link type="text/css" href="style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
@@ -14,35 +10,24 @@
     />
   </head>
 <body>
-  <nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle"></span>
-    <ul class="main-nav" id="js-menu">
-      <li>
-        <a href="index.html" class="nav-links">Home</a>
-      </li>
-      <li>
-        <a href=# class="nav-links">Reviews</a>
-        <ul class="dropdown-content">
-          <li><a class = "drop-items" href="book_pages/clean_ruby.html">Clean Ruby</a></li>
-          <li><a class = "drop-items" href="book_pages/confident_ruby.html">Confident Ruby</a></li>
-          <li><a class = "drop-items" href="book_pages/eloquent-ruby.html">Eloquent Ruby</a></li>
-          <li><a class = "drop-items" href="book_pages/ruby_science.html">Ruby Science</a></li>
-          <li><a class = "drop-items" href="book_pages/grounded_rubyist.html">Well Grounded Rubyist</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#" class="nav-links">About Us</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">Contact Us</a>
-      </li>
-    </ul>
-  </nav>
-  <br>
-  <section>
+  <div class="navbar">
+    <a href="./index.html" class="nav-links">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">Reviews <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="book_pages/clean_ruby.html">Clean Ruby</a>
+        <a href="book_pages/confident_ruby.html">Confident Ruby</a>
+        <a href="book_pages/eloquent-ruby.html">Eloquent Ruby</a>
+        <a href="book_pages/ruby_science.html">Ruby Science</a>
+        <a href="book_pages/grounded_rubyist.html">Well Grounded Rubyist</a>
+      </div>
+    </div>
+    <a href="#contact">About</a>
+    <a href="#contact">Contact</a>
+  </div>
     <header class="header_title"><h1>Ruby Digest: Ruby book reviews</h1></header>
-    <!-- <h1 class ="books_reviewed">Ruby Digest: Ruby book reviews</h1> -->
-    <div class="container" id="flex">
+    <section>
+    <div class="band">
       <div class="books-box">
         <h2><em>Clean Ruby</em></h2>
         <a href="book_pages/clean_ruby.html">
@@ -69,6 +54,7 @@
         alt="Book title: Eloquent Ruby"
       />
     </a>
+    </a>
       </div>
       <div class="books-box">
         <h2><em>Ruby Science</em></h2>
@@ -78,6 +64,7 @@
         alt="Book title: Ruby Science"
       />
        </a>
+      </div>
       <div class="books-box">
         <h2><em>Well Grounded Rubyist</em></h2>
         <a href="book_pages/grounded_rubyist.html">
@@ -85,11 +72,11 @@
         src="images/cover-well_grounded_rubyist.jpg"
         alt="Book title: Well Grounded rubyist"
       />
-      </a>
-    </div>
-  </section>
-  <footer>
-    <p class="footer-text">Copyright &copy; 2020 Sandy Vasquez. All rights reserved.</p>
-</footer>
+        </a>
+      <footer></footer>
+      </section>
+      <footer><p>Copyright &copy; Sandy Vasquez</p></footer>
+       </div>      
   </body>
 </html>
+

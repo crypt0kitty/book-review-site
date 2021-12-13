@@ -1,9 +1,81 @@
-body {
-  margin: 0px;
+ body {
+  margin: 0;
   font-size: medium;
   background-color: whitesmoke;
-  /* box-sizing: border-box; */
   font-family: "Roboto Mono", monospace;
+} 
+
+html, body {
+  width: auto!important; 
+  overflow-x: hidden!important;
+  background-color: whitesmoke
+}
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgb(203, 15, 15);
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(203, 15, 15);
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
 }
 
 .header_title {
@@ -33,49 +105,19 @@ body {
   line-height: 150%;
 }
 
-.container {
-  background-color: whitesmoke;
+.band {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-column: 1fr;
+  grid-template-rows: auto;
+  padding-top: 60px;  
+} 
+
+.books-box {
+  align-items: center;
   justify-content: center;
-}
-
-#flex {
-  display: flex;
-  min-width: 0;
-  flex-direction: row;
-  width: 100%;
-}
-
-/* navbar section */
-.navbar{
-  font-size: 14px;
-  padding: 50px;
-  width: 100%;
-  background-color: black;
-  color: white;
-  margin-top: -40px;
-}
-
-.main-nav {
-  list-style-type: none;
-
-}
-
-.nav-links,
-.logo {
-  text-decoration: none;
-  color: white;
-}
-
-.drop-items {
-  float: none;
-  text-decoration: none;
-  /* display: none; */
-}
-
-.main-nav,
-li {
-  text-align: center;
-  margin: 15px auto;
+  margin: 0 auto;
 }
 
 .logo {
@@ -85,91 +127,22 @@ li {
   margin-left: 20px;
 }
 
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-}
-
-.navbar,
 footer {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-  height: 40px;
-  color: white;
+  flex-shrink: 0;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-.main-nav,
-footer {
-  display: flex;
-  margin-right: 30px;
-  color: black;
-}
-
-.nav-links {
-  margin-left: 40px;
-}
-
-.dropdown-content {
-  list-style-type: none;
-  display: none;
-  position: absolute;
-  background-color: black;
-  color: red;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  z-index: 1;
-}
-
-.dropdown-content a:hover {
-  background-color: black;
-  color: red;
-}
-
-/* + means look at all dropdown siblings of the 'a' that is being hovered */
-a:hover + .dropdown-content {
-  display: block;
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: white;
-}
-
-.dropdown-content:hover {
-  display: block;
-  color: red;
-}
-
-@media screen and (max-width: 600px) {
-  #flex {
-    display: block;
-  }
-
-  .main-nav {
-    display: inline;
+@media only screen and (min-width: 500px) {
+  .band {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/* footer  .social-wrapper li {
-  display: flex;
-  justify-content: space-evenly;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.0rem;
-  padding-top: 30px;
-} */
-
-.social-wrapper ul li {
-  display: inline;
-  padding: 20px;
+@media only screen and (min-width: 1000px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 0.5%;
+  }
 }
-
-
