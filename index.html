@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ruby Digest: Ruby book reviews</title>
     <link type="text/css" href="style.css" rel="stylesheet" />
     <link
@@ -11,10 +12,10 @@
     />
   </head>
 <body>
-  <div class="navbar">
-    <a href="./index.html" class="nav-links">Home</a>
+  <div class="navbar" id="myTopnav">
+    <a href="./index.html" class="active">Home</a>
     <div class="subnav">
-      <button class="subnavbtn">Reviews <i class="fa fa-caret-down"></i></button>
+      <button class="subnavbtn">Reviews<i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
         <a href="book_pages/clean_ruby.html">Clean Ruby</a>
         <a href="book_pages/confident_ruby.html">Confident Ruby</a>
@@ -25,6 +26,8 @@
     </div>
     <a href="./book_pages/about.html">About</a>
     <a href="./book_pages/contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
   </div>
     <header class="header_title"><h1>Ruby Digest: Ruby book reviews</h1></header>
     <section>
@@ -78,6 +81,18 @@
       </section>
       <footer><p>Copyright &copy; Sandy Vasquez</p></footer>
        </div>      
+       
+
+       <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
   </body>
 </html>
 
