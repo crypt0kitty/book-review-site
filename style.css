@@ -99,14 +99,26 @@ html, body {
   font-weight: lighter;
 }
 
+.books_reviewed p {
+  text-align: justify;
+}
+
+.book_description p {
+  text-align: justify;
+}
+
 .book_description {
-  padding: 40px 100px 20px 100px;
+  padding: 30px ;
   line-height: 150%;
 }
 
 .reader_reviews {
-  padding: 20px 60px 20px 60px;
+  padding: 20px;
   line-height: 150%;
+}
+
+.reader_reviews p {
+  text-align: justify;
 }
 
 .band {
@@ -124,12 +136,28 @@ html, body {
   margin: 0 auto;
 }
 
+.about-box {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    margin: 8px;
+    float: left;
+    padding: 0 8px;  
+  }
+
 .logo {
   display: inline-block;
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
 }
+
+.title {
+  color: rgb(203, 15, 15);
+}
+
+figure {
+  border-radius:50%;
+  overflow:hidden; 
+} 
 
 footer {
   flex-shrink: 0;

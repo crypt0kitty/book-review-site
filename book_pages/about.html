@@ -1,29 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>About</title>
+    <title>About us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="../style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <div class="navbar">
-    <a href="../index.html" class="nav-links">Home</a>
-    <div class="subnav">
-      <button class="subnavbtn">Reviews <i class="fa fa-caret-down"></i></button>
-      <div class="subnav-content">
-        <a href="clean_ruby.html">Clean Ruby</a>
-        <a href="confident_ruby.html">Confident Ruby</a>
-        <a href="eloquent-ruby.html">Eloquent Ruby</a>
-        <a href="ruby_science.html">Ruby Science</a>
-        <a href="grounded_rubyist.html">Well Grounded Rubyist</a>
+  <style>  
+</style>
+  <body>
+    <div class="navbar" id="myTopnav">
+      <a href="../index.html" class="nav-links">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn">Reviews <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="clean_ruby.html">Clean Ruby</a>
+          <a href="confident_ruby.html">Confident Ruby</a>
+          <a href="eloquent-ruby.html">Eloquent Ruby</a>
+          <a href="ruby_science.html">Ruby Science</a>
+          <a href="grounded_rubyist.html">Well Grounded Rubyist</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <section class="book_overview">
+      <header class="header_title">
+        <h1>Our Team</h1>
+      </header>
+  
+      <section>
+        <div class="band">
+          <div class="books-box">
+          <div class="first">
+          <div class="about-box">
+            <figure>
+              <img
+            src="https://i.pravatar.cc/200/200?img=48"
+          />
+          </figure>
+            <h2>Aspen Doe</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>aspen@example.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="books-box">
+        <div class="first">
+        <div class="about-box">
+          <figure>
+            <img
+          src="https://i.pravatar.cc/200/200?img=51"
+        />
+        </figure>
+          <h2>Blaine Doe</h2>
+          <p class="title">Lead Writer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>blaine@example.com</p>
+        </div>
       </div>
     </div>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>  
-</body>
-</html>
+    <div class="books-box">
+      <div class="first">
+      <div class="about-box">
+        <figure>
+          <img
+        src="https://i.pravatar.cc/200/200?img=58"
+      />
+      </figure>
+        <h2>Taylor Doe</h2>
+        <p class="title">Editor</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>taylor@example.com</p>
+      </div>
+    </div>
+  </div>
+    </div>
+<footer></footer>
+          </section>
+    <footer>
+      <p class="footer-text">Copyright &copy; Sandy Vasquez</p>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>
 </body>
 </html>
