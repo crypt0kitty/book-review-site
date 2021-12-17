@@ -8,7 +8,7 @@
 html, body {
   width: auto!important; 
   overflow-x: hidden!important;
-  background-color: whitesmoke
+  background-color: whitesmoke;
 }
 
 /* The navigation menu */
@@ -86,6 +86,10 @@ html, body {
   padding: 30px;
 }
 
+.about-title {
+  font-size: 2em;
+}
+
 .reviewed_pics {
   padding-left: 10px;
 }
@@ -97,7 +101,7 @@ html, body {
 }
 
 .book_details {
-  padding: 0px 40px;
+  padding: 0px 25px;
 }
 
 .books_reviewed {
