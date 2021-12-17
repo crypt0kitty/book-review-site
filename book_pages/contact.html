@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 </head>
-<div class="navbar">
+<div class="navbar" id="myTopnav">
   <a href="../index.html" class="nav-links">Home</a>
   <div class="subnav">
     <button class="subnavbtn">Reviews <i class="fa fa-caret-down"></i></button>
@@ -23,6 +23,7 @@
   </div>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 <header class="header_title"><h1>Contact: Ruby Digest</h1></header>
 <div class="container">
@@ -45,5 +46,15 @@
 <footer>
   <p class="footer-text">Copyright &copy; Sandy Vasquez</p>
 </footer>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
+  </script>
 </body>
 </html>
