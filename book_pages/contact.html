@@ -27,25 +27,30 @@
 </div>
 <header class="header_title"><h1>Contact Form: Ruby Digest</h1></header>
 <div class="container">
-  <form action="/action_page.php">
+  <form id="contactForm" method="POST">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="First name...">
+    <input type="text" id="fname" name="firstname" placeholder="First name..." required>
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Last name...">
+    <input type="text" id="lname" name="lastname" placeholder="Last name..." required>
     <label for="country">Subject</label>
-    <select id="country" name="country">
+    <select id="country" name="country" required>
       <option value="australia">Site Feedback</option>
       <option value="canada">Book Suggestion</option>
       <option value="usa">Other</option>
     </select>
     <label for="subject">Text</label>
-    <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px" required></textarea>
     <input type="submit" value="Submit">
+
+    <div id="message"></div>
   </form>
 </div>
 <footer>
   <p class="footer-text">Copyright &copy; Sandy Vasquez</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 <script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -55,6 +60,29 @@
       x.className = "navbar";
     }
   }
+
+  $("#contactForm").on("submit", function (event) {
+    event.preventDefault();
+    //Ajax Call
+    $.ajax({
+      type: "POST",
+      url: "request.php",
+      data: $('#contactForm').serialize(),
+        success: function(result) {
+          $("#fname").val('');
+          $("#lname").val('');
+          $("#subject").val('');
+          $("#message").text(result);
+          
+          setTimeout(function(){ 
+            $('#message').text('');
+          }, 3000);
+        },
+        error: function(result) {
+          alert('error');
+        }
+    });
+  });
   </script>
 </body>
 </html>
