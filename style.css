@@ -130,6 +130,10 @@ html, body {
   line-height: 150%;
 }
 
+#quote-color {
+  color: rgb(203, 15, 15);
+}
+
 .reader_reviews {
   padding: 10px;
   line-height: 150%;
