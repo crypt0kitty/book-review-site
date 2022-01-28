@@ -91,11 +91,11 @@ html, body {
 }
 
 .header_title {
-  padding: 30px;
+  padding: 20px;
 }
 
 .about-title {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .reviewed_pics {
@@ -198,6 +198,15 @@ footer {
   text-align: center;
 }
 
+.container {
+  padding: 30px;
+}
+
+#contactForm {
+  width: 40%;
+
+}
+
 @media only screen and (min-width: 500px) {
   .band {
     grid-template-columns: 1fr 1fr;
@@ -220,6 +229,9 @@ footer {
     display: block;
   }
 
+  #contactForm {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
