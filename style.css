@@ -1,8 +1,11 @@
- body {
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto&display=swap');
+
+body {
   margin: 0;
   font-size: medium;
   background-color: whitesmoke;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Major Mono Display', monospace;
 } 
 
 html, body {
@@ -15,6 +18,7 @@ html, body {
 .navbar {
   overflow: hidden;
   background-color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Navigation links */
@@ -91,9 +95,10 @@ html, body {
 }
 
 .header_title {
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 30px;
 }
-
+ 
 .about-title {
   font-size: 1.6em;
 }
@@ -110,6 +115,7 @@ html, body {
 
 .book_details {
   padding: 0px 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .books_reviewed {
@@ -119,15 +125,26 @@ html, body {
 
 .books_reviewed p {
   text-align: justify;
+  font-family: 'Roboto', sans-serif;
 }
 
 .book_description p {
   text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  width: 80%;
 }
 
 .book_description {
-  padding: 20px ;
+  padding-left: 20px;
+  padding-top: 30px;
   line-height: 150%;
+}
+
+.book-description-heading {
+  padding-left: 20px;
+  padding-top: 15px;
+  line-height: 150%;
+  font-family: 'Roboto', sans-serif;
 }
 
 #quote-color {
@@ -141,6 +158,8 @@ html, body {
 
 .reader_reviews p {
   text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  width: 80%;
 }
 
 .band {
@@ -149,7 +168,7 @@ html, body {
   display: grid;
   grid-column: 1fr;
   grid-template-rows: auto;
-  padding-top: 60px;  
+  padding-top: 50px;  
 } 
 
 .books-box {
@@ -176,6 +195,11 @@ html, body {
 
 .title {
   color: rgb(203, 15, 15);
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-p {
+  font-family: 'Roboto', sans-serif;
 }
 
 figure{
@@ -191,21 +215,36 @@ figure{
   border-radius:50%;
  }
 
-footer {
-  flex-shrink: 0;
-  padding-top: 100px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
 .container {
-  padding: 30px;
+  padding: 20px;
 }
 
 #contactForm {
-  width: 40%;
-
+  width: 50%;
 }
+
+em {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  position: absolute;
+  background-color: #ccc;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+ .footer-text {
+  color: rgb(203, 15, 15);
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  vertical-align: middle;
+	margin: 5px auto 10px auto;
+ }
 
 @media only screen and (min-width: 500px) {
   .band {
@@ -229,8 +268,24 @@ footer {
     display: block;
   }
 
+  .book_description p {
+    width: 95%;
+   }
+
+  .reader_reviews p {
+    width: 100%;
+  }
+
+  .band {
+    padding-top: 0px;  
+  }
+
   #contactForm {
     width: 100%;
+  }
+
+  footer {
+    padding-top: 50px;
   }
 }
 
