@@ -1,16 +1,15 @@
 <!-- homepage -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Ruby Digest: Ruby book reviews</title>
-    <link type="text/css" href="style.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
-      rel="stylesheet"
-    />
-  </head>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Ruby Digest: Ruby book reviews</title>
+  <link type="text/css" href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" />
+</head>
+
 <body>
   <div class="navbar" id="myTopnav">
     <a href="./index.html" class="active">Home</a>
@@ -29,61 +28,49 @@
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
   </div>
+  <main class="main-container">
     <h1 class="header_title">Ruby Digest: Ruby book reviews</h1>
     <section>
-    <div class="band">
-      <div class="books-box">
-        <h2><em>Clean Ruby</em></h2>
-        <a href="book_pages/clean_ruby.html">
-        <img
-          src="images/cover-clean_ruby.jpg"
-          alt="Book title: Clean Ruby"
-        />
-        </a>
-      </div>
-      <div class="books-box">
-        <h2><em>Confident Ruby</em></h2>
-        <a href="book_pages/confident_ruby.html">
-        <img
-        src="images/cover-confident_ruby.jpg"
-        alt="Book title: Confident Ruby"
-      />
-        </a>
-      </div>
-      <div class="books-box">
-        <h2><em>Eloquent Ruby</em></h2>
-        <a href="book_pages/eloquent-ruby.html">
-        <img
-        src="images/cover-eloquent_ruby.jpg"
-        alt="Book title: Eloquent Ruby"
-      />
-    </a>
-    </a>
-      </div>
-      <div class="books-box">
-        <h2><em>Ruby Science</em></h2>
-        <a href="book_pages/ruby_science.html">
-        <img
-        src="images/cover-ruby_science.jpg"
-        alt="Book title: Ruby Science"
-      />
-       </a>
-      </div>
-      <div class="books-box">
-        <h2><em>Well Grounded Rubyist</em></h2>
-        <a href="book_pages/grounded_rubyist.html">
-        <img
-        src="images/cover-well_grounded_rubyist.jpg"
-        alt="Book title: Well Grounded rubyist"
-      />
-        </a>
+      <div class="band">
+        <div class="books-box">
+          <p class="book-title">Clean Ruby</p>
+          <a href="book_pages/clean_ruby.html">
+            <img src="images/cover-clean_ruby.jpg" alt="Book title: Clean Ruby" />
+          </a>
         </div>
-      </section>
-       </div>  
-       <footer>
-        <p class="footer-text">Copyright &copy; Sandy Vasquez</p>
-    </footer>    
-       <script>
+        <div class="books-box">
+          <p class="book-title">Confident Ruby</p>
+          <a href="book_pages/confident_ruby.html">
+            <img src="images/cover-confident_ruby.jpg" alt="Book title: Confident Ruby" />
+          </a>
+        </div>
+        <div class="books-box">
+          <p class="book-title">Eloquent Ruby</p>
+          <a href="book_pages/eloquent-ruby.html">
+            <img src="images/cover-eloquent_ruby.jpg" alt="Book title: Eloquent Ruby" />
+          </a>
+          </a>
+        </div>
+        <div class="books-box">
+          <p class="book-title">Ruby Science</p>
+          <a href="book_pages/ruby_science.html">
+            <img src="images/cover-ruby_science.jpg" alt="Book title: Ruby Science" />
+          </a>
+        </div>
+        <div class="books-box">
+          <p class="book-title">Well Grounded Rubyist</p>
+          <a href="book_pages/grounded_rubyist.html">
+            <img src="images/cover-well_grounded_rubyist.jpg" alt="Book title: Well Grounded rubyist" />
+          </a>
+        </div>
+    </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p id="footer-text">© 2022 Ruby Digest </p>
+  </footer>
+
+      <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
           if (x.className === "navbar") {
@@ -92,10 +79,7 @@
             x.className = "navbar";
           }
         }
-        </script>
-       <footer class="footer">
-        <p class= "footer-text">© Sandy Vasquez</p>
-       </footer> 
-  </body>
+      </script>
+      
+    </body>
 </html>
-
