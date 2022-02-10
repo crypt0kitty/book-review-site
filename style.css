@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto&display=swap");
 
 html body {
-  margin-bottom: 100px;
   background-color: whitesmoke;
   font-family: "Roboto", sans-serif;
   font-family: "Major Mono Display", monospace;
   position: relative;
-  margin: 0;
-  height: 100%;
+  margin: 0;  
 }
 
 .main-container {
@@ -109,7 +107,7 @@ body {
 .book-title {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 900;
   transform: scale(1, 0.78);
   letter-spacing: -1px;
@@ -152,13 +150,11 @@ body {
 .book_description p {
   text-align: justify;
   font-family: "Roboto", sans-serif;
-  width: 80%;
+  width: 100%;
 }
 
 .book_description {
-  padding-left: 20px;
-  padding-top: 30px;
-  line-height: 150%;
+  padding: 15px;
 }
 
 .book-description-heading {
@@ -173,14 +169,14 @@ body {
 }
 
 .reader_reviews {
-  padding: 10px;
+  padding: 15px;
   line-height: 150%;
 }
 
 .reader_reviews p {
   text-align: justify;
   font-family: "Roboto", sans-serif;
-  width: 80%;
+  width: 100%;
 }
 
 .band {
@@ -214,6 +210,14 @@ body {
   margin-left: 20px;
 }
 
+.highlight {
+  background-color: rgb(203, 15, 15);
+}
+
+.email-text {
+  color: white;
+}
+
 .title {
   color: rgb(203, 15, 15);
   font-family: "Roboto", sans-serif;
@@ -241,7 +245,7 @@ figure {
 }
 
 #contactForm {
-  width: 50%;
+  width: 40%;
 }
 
 em {
@@ -272,10 +276,9 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
   .band {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 0.5%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -287,10 +290,6 @@ footer {
   .navbar a.icon {
     float: right;
     display: block;
-  }
-
-  .book_description p {
-    width: 95%;
   }
 
   .reader_reviews p {
